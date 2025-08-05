@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -174,6 +175,11 @@
 </head>
 <body class="text-slate-700 relative">
 
+    <a href="https://wa.me/556699109960" target="_blank" aria-label="WhatsApp"
+   class="fixed bottom-5 right-5 z-50 bg-blue-500 hover:bg-blue-600 text-white p-5 md:p-6 rounded-full shadow-lg shadow-blue-500/30 transition-all duration-300">
+    <i class="fab fa-whatsapp fa-xl"></i>
+</a>
+
     <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <div class="absolute top-[-20rem] left-[-20rem] w-[50rem] h-[50rem] bg-sky-200/40 rounded-full filter blur-3xl opacity-60 animate-pulse"></div>
         <div class="absolute bottom-[-15rem] right-[-15rem] w-[40rem] h-[40rem] bg-indigo-200/40 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-4000"></div>
@@ -183,57 +189,113 @@
 
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-sky-600">Com<span class="font-light text-slate-800">.vida</span></a>
+            <img src="decunto.png" class="w-20 md:w-24" alt="">
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#sobre" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Sobre</a>
-                <a href="#especialidades" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Especialidades</a>
-                <a href="#diferenciais" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Diferenciais</a>
-                <a href="#equipe" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Equipe</a>
-                <a href="#contato" class="text-slate-600 hover:text-sky-600 transition-colors duration-300">Contato</a>
+                <a href="#sobre" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">Sobre</a>
+                <a href="#especialidades" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">Especialidades</a>
+                <a href="#diferenciais" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">Diferenciais</a>
+                <a href="#equipe" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">Equipe</a>
+                <a href="#contato" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">Contato</a>
             </div>
             <a href="#contato" class="hidden md:block bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animated-gradient-button">
                 Agendar Horário
             </a>
-            <button id="mobile-menu-button" class="md:hidden text-slate-600 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-gray-500 focus:outline-none">
                 <i data-feather="menu" class="w-7 h-7"></i>
             </button>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-            <a href="#sobre" class="block text-slate-600 hover:text-sky-600 py-2">Sobre</a>
-            <a href="#especialidades" class="block text-slate-600 hover:text-sky-600 py-2">Especialidades</a>
-            <a href="#diferenciais" class="block text-slate-600 hover:text-sky-600 py-2">Diferenciais</a>
-            <a href="#equipe" class="block text-slate-600 hover:text-sky-600 py-2">Equipe</a>
-            <a href="#contato" class="block text-slate-600 hover:text-sky-600 py-2">Contato</a>
+            <a href="#sobre" class="block text-gray-500 hover:text-sky-600 py-2">Sobre</a>
+            <a href="#especialidades" class="block text-gray-500 hover:text-sky-600 py-2">Especialidades</a>
+            <a href="#diferenciais" class="block text-gray-500 hover:text-sky-600 py-2">Diferenciais</a>
+            <a href="#equipe" class="block text-gray-500 hover:text-sky-600 py-2">Equipe</a>
+            <a href="#contato" class="block text-gray-500 hover:text-sky-600 py-2">Contato</a>
             <a href="#contato" class="block bg-gradient-to-r from-sky-500 to-indigo-500 text-white text-center mt-3 px-5 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 animated-gradient-button">Agendar Horário</a>
         </div>
     </header>
 
     <main>
-        <section id="home" class="container mx-auto px-6 py-20 md:py-32">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="text-center md:text-left scroll-reveal">
-                    <span class="text-sky-600 font-semibold uppercase tracking-wider">Clínica Com.vida</span>
-                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-slate-900 mt-2">
-                        Sua saúde em primeiro lugar, <span class="text-sky-600">sempre.</span>
-                    </h1>
-                    <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto md:mx-0">
-                        Oferecemos um cuidado integrado e humanizado, com tecnologia de ponta e uma equipe de especialistas dedicados ao seu bem-estar completo.
-                    </p>
-                    <div class="mt-10 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#especialidades" class="bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 animated-gradient-button shadow-lg">
-                            Conhecer Serviços
-                        </a>
-                        <a href="#sobre" class="bg-slate-100 text-slate-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg">
-                            Saiba Mais
-                        </a>
+        <style>
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+        
+            /* Animação para o botão gradiente */
+            .animated-gradient-button {
+                background-size: 200% auto;
+                transition: background-position 0.5s ease-in-out;
+            }
+            .animated-gradient-button:hover {
+                background-position: right center; /* Muda a posição do gradiente no hover */
+            }
+        
+            /* Animações de entrada (se você não estiver usando uma biblioteca JS como a ScrollReveal) */
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .fade-in-up {
+                animation: fadeInUp 0.8s ease-out forwards;
+                opacity: 0; /* Inicia invisível */
+            }
+        </style>
+        
+        <section id="home" class="relative overflow-hidden bg-gradient-to-br from-sky-50 via-gray-50 to-indigo-100">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23a0aec0\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+            <div class="container relative z-10 mx-auto px-6 py-24 md:py-32">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    
+                    <div class="text-center md:text-left">
+                        <span class="fade-in-up text-sky-600 font-semibold uppercase tracking-wider" style="animation-delay: 100ms;">
+                            CENTRO MÉDICO DE CUNTO 
+                        </span>
+                        <h1 class="fade-in-up text-4xl md:text-6xl font-extrabold leading-tight text-slate-900 mt-2" style="animation-delay: 200ms;">
+                            Sua saúde em primeiro lugar, <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-600">sempre.</span>
+                        </h1>
+                        <p class="fade-in-up mt-6 text-lg text-gray-500 max-w-xl mx-auto md:mx-0 leading-relaxed" style="animation-delay: 300ms;">
+                            Oferecemos um cuidado integrado e humanizado, com tecnologia de ponta e uma equipe de especialistas dedicados ao seu bem-estar completo.
+                        </p>
+                        <div class="fade-in-up mt-10 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4" style="animation-delay: 400ms;">
+                            <a href="#especialidades" class="animated-gradient-button inline-flex items-center justify-center bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                                Conhecer Serviços
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                            </a>
+                            <a href="#sobre" class="inline-flex items-center justify-center bg-white/70 backdrop-blur-sm text-slate-800 px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-white transform hover:scale-105 transition-all duration-300">
+                                Saiba Mais
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="hidden md:block scroll-reveal" style="animation-delay: 0.2s;">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Médica sorrindo com tablet" class="rounded-2xl shadow-2xl w-full h-auto object-cover transform rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10 relative">
-                        <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-sky-200 rounded-2xl -z-0"></div>
-                        <div class="absolute -top-8 -right-8 w-48 h-48 bg-indigo-200 rounded-full -z-0"></div>
+        
+                    <div class="">
+                        <div class="relative">
+                            <div class="animate-float absolute -top-10 -right-10 w-64 h-64 bg-sky-300/50 rounded-full -z-0 blur-2xl" style="animation-delay: 0.5s;"></div>
+                            <div class="animate-float absolute -bottom-12 -left-12 w-72 h-72 bg-indigo-300/50 rounded-2xl -z-0 blur-2xl"></div>
+                    
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Médica sorrindo com tablet" class="fade-in-up relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500">
+                    
+                            <div class="absolute -bottom-8 md:-left-20 -left-1 z-20 transform transition-all duration-500 hover:scale-110">
+                                <div class="flex items-center space-x-4 rounded-2xl border border-white/30 bg-blue/50 p-4 shadow-lg backdrop-blur-lg">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-2xl font-bold text-white drop-shadow-md">+5000</p>
+                                        <p class="text-sm text-white/80">Atendimentos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+        
                 </div>
             </div>
         </section>
@@ -241,8 +303,9 @@
         <section id="diferenciais" class="py-20 md:py-28 scroll-mt-20">
             <div class="container mx-auto px-6 text-center">
                 <div class="scroll-reveal">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Por que escolher a Com<span class="font-light">.vida</span>?</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Nosso compromisso vai além do tratamento. Cuidamos de você em cada detalhe.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold class text-sky-600">Por que escolher o<span class="font-light"> Centro de Cunto</span>?</h2>
+                    <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Nosso compromisso vai além do tratamento. Cuidamos de você em cada detalhe.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-sky-600 mt-6"></div>
                 </div>
                 <div class="mt-16 grid md:grid-cols-3 gap-10">
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
@@ -250,21 +313,21 @@
                             <i data-feather="cpu" class="h-8 w-8"></i>
                         </div>
                         <h3 class="mt-6 text-2xl font-semibold text-slate-800">Tecnologia de Ponta</h3>
-                        <p class="mt-2 text-slate-600">Utilizamos equipamentos modernos para diagnósticos precisos e tratamentos mais eficazes.</p>
+                        <p class="mt-2 text-gray-500">Utilizamos equipamentos modernos para diagnósticos precisos e tratamentos mais eficazes.</p>
                     </div>
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style="animation-delay: 0.2s;">
                         <div class="bg-sky-100 text-sky-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto">
                             <i data-feather="heart" class="h-8 w-8"></i>
                         </div>
                         <h3 class="mt-6 text-2xl font-semibold text-slate-800">Cuidado Humanizado</h3>
-                        <p class="mt-2 text-slate-600">Cada paciente é único. Oferecemos um atendimento atencioso, empático e totalmente personalizado.</p>
+                        <p class="mt-2 text-gray-500">Cada paciente é único. Oferecemos um atendimento atencioso, empático e totalmente personalizado.</p>
                     </div>
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" style="animation-delay: 0.4s;">
                         <div class="bg-sky-100 text-sky-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto">
                             <i data-feather="smile" class="h-8 w-8"></i>
                         </div>
                         <h3 class="mt-6 text-2xl font-semibold text-slate-800">Ambiente Acolhedor</h3>
-                        <p class="mt-2 text-slate-600">Nossa clínica foi projetada para ser um espaço de calma e conforto, promovendo seu bem-estar.</p>
+                        <p class="mt-2 text-gray-500">Nossa clínica foi projetada para ser um espaço de calma e conforto, promovendo seu bem-estar.</p>
                     </div>
                 </div>
             </div>
@@ -275,6 +338,7 @@
                 <div class="text-center scroll-reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">Nossas Especialidades</h2>
                     <p class="mt-4 text-lg text-sky-100 max-w-2xl mx-auto">Um olhar aprofundado sobre nosso cuidado integrado para sua saúde.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-white mt-6"></div>
                 </div>
         
                 <div x-data="specialtiesSlider()" x-init="play()" @mouseenter="pause()" @mouseleave="play()" class="mt-16 scroll-reveal">
@@ -413,22 +477,22 @@
                     </div>
                     <div class="scroll-reveal" style="animation-delay: 0.2s;">
                         <span class="text-sky-600 font-semibold uppercase tracking-wider">Nossa Missão</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Cuidado que transforma vidas</h2>
-                        <p class="mt-4 text-lg text-slate-600">
-                            Na Clínica Com.vida, acreditamos que a saúde vai além da ausência de doenças. É um estado de completo bem-estar físico, mental e social. Nossa missão é ser seu parceiro nessa jornada, oferecendo um cuidado que respeita sua individualidade e promove uma vida mais plena e saudável.
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-600 mt-2 mb-8">Cuidado que <span class="text-sky-600">transforma vidas</span></h2>
+                        <p class="mt-4 text-lg text-gray-500">
+                            No Centro Médico de Cunto, acreditamos que a saúde vai além da ausência de doenças. É um estado de completo bem-estar físico, mental e social. Nossa missão é ser seu parceiro nessa jornada, oferecendo um cuidado que respeita sua individualidade e promove uma vida mais plena e saudável.
                         </p>
                         <ul class="mt-6 space-y-4">
                             <li class="flex items-start">
                                 <i data-feather="check-circle" class="h-6 w-6 text-sky-500 mt-1 flex-shrink-0"></i>
-                                <span class="ml-3 text-slate-600">Planos de tratamento personalizados para suas necessidades.</span>
+                                <span class="ml-3 text-gray-500">Planos de tratamento personalizados para suas necessidades.</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check-circle" class="h-6 w-6 text-sky-500 mt-1 flex-shrink-0"></i>
-                                <span class="ml-3 text-slate-600">Equipe multidisciplinar para um cuidado completo e integrado.</span>
+                                <span class="ml-3 text-gray-500">Equipe multidisciplinar para um cuidado completo e integrado.</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check-circle" class="h-6 w-6 text-sky-500 mt-1 flex-shrink-0"></i>
-                                <span class="ml-3 text-slate-600">Foco em prevenção e educação para uma saúde duradoura.</span>
+                                <span class="ml-3 text-gray-500">Foco em prevenção e educação para uma saúde duradoura.</span>
                             </li>
                         </ul>
                     </div>
@@ -439,8 +503,9 @@
         <section id="equipe" class="py-20 md:py-28 scroll-mt-20 bg-slate-100 overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                 <div class="scroll-reveal">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nossos Especialistas</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Profissionais apaixonados por cuidar de pessoas.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-sky-600">Nossos Especialistas</h2>
+                    <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Profissionais apaixonados por cuidar de pessoas.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-sky-600 mt-6 mb-6"></div>
                 </div>
             </div>
         
@@ -642,11 +707,12 @@
             </script>
         </section>
 
-        <section id="depoimentos" class="py-20 md:py-28 scroll-mt-20">
+        <section id="depoimentos" class="py-20 md:py-28 scroll-mt-20 bg-gradient-to-br from-sky-600 to-indigo-700">
             <div class="container mx-auto px-6">
                 <div class="text-center scroll-reveal">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">O que nossos pacientes dizem</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">A confiança e o carinho que recebemos são nossa maior motivação.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">O que nossos pacientes dizem</h2>
+                    <p class="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">A confiança e o carinho que recebemos são nossa maior motivação.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-white mt-6 mb-6"></div>
                 </div>
                 <div class="mt-16 grid md:grid-cols-2 gap-8">
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-lg">
@@ -657,7 +723,7 @@
                                 <p class="text-sm text-slate-500">Paciente de Ortopedia</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 italic">"Fui atendida pelo Dr. Bruno e a atenção que recebi foi excepcional. Desde a recepção até a consulta, me senti segura e bem cuidada. Recomendo de olhos fechados!"</p>
+                        <p class="text-gray-500 italic">"Fui atendida pelo Dr. Bruno e a atenção que recebi foi excepcional. Desde a recepção até a consulta, me senti segura e bem cuidada. Recomendo de olhos fechados!"</p>
                     </div>
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-lg" style="animation-delay: 0.2s;">
                         <div class="flex items-center mb-4">
@@ -667,7 +733,7 @@
                                 <p class="text-sm text-slate-500">Pai de paciente da Pediatria</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 italic">"Levei meu filho para uma consulta com a Dra. Beatriz e fiquei impressionado com o carinho e a paciência dela. O ambiente é ótimo para crianças. Viramos clientes fiéis."</p>
+                        <p class="text-gray-500 italic">"Levei meu filho para uma consulta com a Dra. Beatriz e fiquei impressionado com o carinho e a paciência dela. O ambiente é ótimo para crianças. Viramos clientes fiéis."</p>
                     </div>
                 </div>
             </div>
@@ -676,8 +742,9 @@
         <section id="faq" class="py-20 md:py-28 scroll-mt-20 bg-slate-100">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="text-center scroll-reveal mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Perguntas Frequentes</h2>
-                    <p class="mt-4 text-lg text-slate-600">Tirando suas dúvidas para um atendimento mais tranquilo.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-sky-600">Perguntas Frequentes</h2>
+                    <p class="mt-4 text-lg text-gray-500">Tirando suas dúvidas para um atendimento mais tranquilo.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-sky-600 mt-6 mb-6"></div>
                 </div>
                 <div class="space-y-4">
                     <details class="scroll-reveal bg-white p-6 rounded-lg shadow-sm group">
@@ -685,31 +752,90 @@
                             Quais convênios vocês aceitam?
                             <i data-feather="chevron-down" class="chevron-icon h-5 w-5 text-slate-500 group-hover:text-sky-600"></i>
                         </summary>
-                        <p class="mt-4 text-slate-600">Atendemos uma ampla variedade de convênios. Para confirmar se o seu plano é aceito, por favor, entre em contato com nossa recepção por telefone ou WhatsApp.</p>
+                        <p class="mt-4 text-gray-500">Atendemos uma ampla variedade de convênios. Para confirmar se o seu plano é aceito, por favor, entre em contato com nossa recepção por telefone ou WhatsApp.</p>
                     </details>
                     <details class="scroll-reveal bg-white p-6 rounded-lg shadow-sm group">
                         <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800">
                             Como faço para agendar minha primeira consulta?
                             <i data-feather="chevron-down" class="chevron-icon h-5 w-5 text-slate-500 group-hover:text-sky-600"></i>
                         </summary>
-                        <p class="mt-4 text-slate-600">Você pode agendar sua consulta de forma rápida e fácil através do nosso botão "Agendar Horário" aqui no site, que te levará ao nosso WhatsApp, ou ligando diretamente para nossa clínica.</p>
+                        <p class="mt-4 text-gray-500">Você pode agendar sua consulta de forma rápida e fácil através do nosso botão "Agendar Horário" aqui no site, que te levará ao nosso WhatsApp, ou ligando diretamente para nossa clínica.</p>
                     </details>
                     <details class="scroll-reveal bg-white p-6 rounded-lg shadow-sm group">
                         <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center text-slate-800">
                             Preciso levar algum documento no dia da consulta?
                             <i data-feather="chevron-down" class="chevron-icon h-5 w-5 text-slate-500 group-hover:text-sky-600"></i>
                         </summary>
-                        <p class="mt-4 text-slate-600">Sim. Por favor, traga um documento de identificação com foto e, se for utilizar convênio, sua carteirinha do plano de saúde. Se tiver exames anteriores relacionados à sua consulta, é muito útil trazê-los também.</p>
+                        <p class="mt-4 text-gray-500">Sim. Por favor, traga um documento de identificação com foto e, se for utilizar convênio, sua carteirinha do plano de saúde. Se tiver exames anteriores relacionados à sua consulta, é muito útil trazê-los também.</p>
                     </details>
                 </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="scroll-mt-20 bg-gradient-to-br from-sky-600 to-indigo-700 py-24 lg:py-32">
+            <div class="container mx-auto px-6">
+                
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">
+                        Um Espaço para o seu Bem-Estar
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+                        Conheça nossas instalações modernas, projetadas para oferecer máximo conforto, tecnologia de ponta e um ambiente acolhedor em cada detalhe.
+                    </p>
+
+                    <div class="w-32 h-1 mx-auto rounded-full bg-white mt-6"></div>
+
+                </div>
+        
+                <div class="mx-auto mt-20 max-w-7xl scroll-reveal " style="animation-delay: 170ms;">
+                    <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
+                        
+                        <a href="https://images.unsplash.com/photo-1551192422-a8e637d54b4a?q=80&w=2070&auto=format&fit=crop" class="group aspect-[4/3] relative col-span-2 row-span-2 block overflow-hidden rounded-2xl shadow-2xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-cyan-400/30 sm:col-span-2 lg:col-span-2 lg:row-span-2">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" alt="Recepção da clínica ampla e bem iluminada." class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/20"></div>
+                            <div class="absolute bottom-0 left-0 p-4 sm:p-6">
+                                <h3 class="text-lg font-bold text-white sm:text-xl">Recepção Acolhedora</h3>
+                                <p class="text-xs text-gray-200 sm:text-sm">Conforto desde o primeiro momento.</p>
+                            </div>
+                        </a>
+                        
+        
+                        <a href="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" class="group aspect-[4/3] relative block overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-cyan-400/30">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" alt="Sala de consulta médica organizada e equipada." class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/40"></div>
+                             <div class="absolute bottom-0 left-0 p-4">
+                                <h3 class="text-base font-bold text-white sm:text-lg">Consultórios</h3>
+                            </div>
+                        </a>
+        
+                        <a href="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" class="group aspect-[4/3] relative block overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-cyan-400/30">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" alt="Equipamento médico de alta tecnologia." class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/40"></div>
+                             <div class="absolute bottom-0 left-0 p-4">
+                                <h3 class="text-base font-bold text-white sm:text-lg">Tecnologia</h3>
+                            </div>
+                        </a>
+        
+                        <a href="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=2070&auto=format&fit=crop" class="group aspect-[4/3] relative col-span-2 block overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-cyan-400/30 sm:col-span-2 lg:col-span-2">
+                            <img src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=2070&auto=format&fit=crop" alt="Corredor da clínica com design moderno." class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                             <div class="absolute inset-0 bg-black/40"></div>
+                             <div class="absolute bottom-0 left-0 p-4 sm:p-6">
+                                <h3 class="text-base font-bold text-white sm:text-lg">Ambientes Planejados</h3>
+                            </div>
+                        </a>
+        
+                    </div>
+                </div>
+        
             </div>
         </section>
 
         <section id="contato" class="py-20 md:py-28 scroll-mt-20">
             <div class="container mx-auto px-6">
                  <div class="text-center scroll-reveal">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Agende sua Consulta</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Estamos prontos para te receber. Entre em contato ou venha nos visitar.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-sky-600">Agende sua Consulta</h2>
+                    <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Estamos prontos para te receber. Entre em contato ou venha nos visitar.</p>
+                    <div class="w-32 h-1 mx-auto rounded-full bg-sky-600 mt-6"></div>
                 </div>
                 <div class="mt-16 grid md:grid-cols-2 gap-12 items-start">
                     <div class="scroll-reveal bg-white p-8 rounded-2xl shadow-2xl space-y-8">
@@ -722,7 +848,7 @@
                                     </div>
                                     <div class="ml-4">
                                         <h4 class="text-lg font-semibold text-slate-700">Endereço</h4>
-                                        <p class="text-slate-600">Av. Principal, 123 - Centro, Sua Cidade - UF</p>
+                                        <p class="text-gray-500">Av. Principal, 123 - Centro, Sua Cidade - UF</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start">
@@ -731,7 +857,7 @@
                                     </div>
                                     <div class="ml-4">
                                         <h4 class="text-lg font-semibold text-slate-700">Telefone e WhatsApp</h4>
-                                        <p class="text-slate-600">(XX) 99999-8888</p>
+                                        <p class="text-gray-500">(XX) 99999-8888</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start">
@@ -740,7 +866,7 @@
                                     </div>
                                     <div class="ml-4">
                                         <h4 class="text-lg font-semibold text-slate-700">E-mail</h4>
-                                        <p class="text-slate-600">contato@clinicacomvida.com.br</p>
+                                        <p class="text-gray-500">contato@decunto.com.br</p>
                                     </div>
                                 </div>
                             </div>
@@ -748,8 +874,8 @@
                         
                         <div>
                             <h3 class="text-2xl font-semibold text-slate-800 mb-4">Horário de Funcionamento</h3>
-                            <p class="text-slate-600">Segunda a Sexta: 08:00 às 18:00</p>
-                            <p class="text-slate-600">Sábado: 08:00 às 12:00</p>
+                            <p class="text-gray-500">Segunda a Sexta: 08:00 às 18:00</p>
+                            <p class="text-gray-500">Sábado: 08:00 às 12:00</p>
                         </div>
                     </div>
                     
@@ -773,7 +899,7 @@
         <div class="container mx-auto px-6 py-12">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2 lg:col-span-1">
-                    <a href="#" class="text-3xl font-bold text-white">Com<span class="font-light text-slate-300">.vida</span></a>
+                    <img src="decunto.png" class="w-40 mb-12" alt="">
                     <p class="mt-4 text-sm">Cuidado moderno e humanizado para toda a sua família.</p>
                 </div>
                 <div>
@@ -789,7 +915,7 @@
                     <h4 class="font-semibold text-white tracking-wider">Contato</h4>
                     <ul class="mt-4 space-y-2">
                         <li><p>(XX) 99999-8888</p></li>
-                        <li><p>contato@clinicacomvida.com.br</p></li>
+                        <li><p>contato@decunto.com.br</p></li>
                     </ul>
                 </div>
                 <div>
@@ -802,7 +928,7 @@
                 </div>
             </div>
             <div class="mt-12 border-t border-slate-700 pt-6 text-center text-sm">
-                <p>&copy; 2025 Clínica Com.vida. Todos os direitos reservados. Desenvolvido com ❤️.</p>
+                <p>&copy; 2025 Centro Médico de Cunto. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
